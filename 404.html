@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WisdomBot – 404 Seite nicht gefunden</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "i18next": "https://esm.sh/i18next@23.11.2"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="logo">
+      <span class="brand-title" data-i18n="brand">WisdomBot</span>
+    </a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="nav-links" data-nav>
+      <a href="index.html" data-i18n="nav.home">Start</a>
+      <a href="team.html" data-i18n="nav.team">Team</a>
+      <a href="docs.html" data-i18n="nav.docs">Dokumentation</a>
+      <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+      <label class="lang-switch">
+        <span class="sr-only">Sprache</span>
+        <select id="lang-select">
+          <option value="de" selected>DE</option>
+          <option value="en">EN</option>
+        </select>
+      </label>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header text-center">
+      <h1 data-i18n="error404.title" style="font-size: clamp(3rem, 10vw, 6rem);">404 - Seite nicht gefunden</h1>
+      <p class="lead" data-i18n="error404.subtitle">Ups! Die angeforderte Seite existiert nicht oder wurde verschoben.</p>
+      
+      <div class="cta-row" style="justify-content: center; margin-top: 40px;">
+        <a class="btn primary" href="index.html" data-i18n="error404.cta_home">Zur Startseite</a>
+        <a class="btn" href="docs.html" data-i18n="error404.cta_docs">Zur Dokumentation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> WisdomBot</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

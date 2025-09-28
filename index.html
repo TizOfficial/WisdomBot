@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WisdomBot – All-in-One Discord Bot</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "i18next": "https://esm.sh/i18next@23.11.2"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="logo">
+      <span class="brand-title" data-i18n="brand">WisdomBot</span>
+    </a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="nav-links" data-nav>
+      <a href="index.html" data-i18n="nav.home">Start</a>
+      <a href="team.html" data-i18n="nav.team">Team</a>
+      <a href="docs.html" data-i18n="nav.docs">Dokumentation</a>
+      <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+      <label class="lang-switch">
+        <span class="sr-only">Sprache</span>
+        <select id="lang-select">
+          <option value="de" selected>DE</option>
+          <option value="en">EN</option>
+        </select>
+      </label>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 data-i18n="hero.title">Der All-in-One Discord Bot für Moderation, Musik und mehr.</h1>
+      <p class="lead" data-i18n="hero.subtitle">Smarte Tools, saubere Performance und einfache Bedienung – alles in einem Bot.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#" data-i18n="cta.invite">Bot einladen</a>
+        <a class="btn" href="docs.html" data-i18n="cta.docs">Zur Dokumentation</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3 data-i18n="features.mod.title">Moderation</h3>
+        <p data-i18n="features.mod.desc">Automod, Mutes, Warnungen und Logs – robust und zuverlässig.</p>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="features.music.title">Musik</h3>
+        <p data-i18n="features.music.desc">Warteschlange, Playlists und hochwertige Audio-Wiedergabe.</p>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="features.utility.title">Utilities</h3>
+        <p data-i18n="features.utility.desc">Rollen, Umfragen, Erinnerungen und praktische Shortcuts.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2 data-i18n="panel.title">Warum WisdomBot?</h2>
+      <ul class="checklist">
+        <li data-i18n="panel.point1">Schnell, stabil und wartungsfreundlich</li>
+        <li data-i18n="panel.point2">Einfaches Setup mit klaren Befehlen</li>
+        <li data-i18n="panel.point3">Transparente Updates und aktive Community</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> WisdomBot</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+

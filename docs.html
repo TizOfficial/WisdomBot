@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WisdomBot – Dokumentation</title>
+  <!-- ...existing content... -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "i18next": "https://esm.sh/i18next@23.11.2"
+    }
+  }
+  </script>
+  <!-- ...existing content... -->
+</head>
+<body>
+  <header class="nav">
+    <!-- ...existing content... -->
+    <a class="brand" href="index.html">
+      <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="logo">
+      <span class="brand-title" data-i18n="brand">WisdomBot</span>
+    </a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="nav-links" data-nav>
+      <a href="index.html" data-i18n="nav.home">Start</a>
+      <a href="team.html" data-i18n="nav.team">Team</a>
+      <a href="docs.html" data-i18n="nav.docs">Dokumentation</a>
+      <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+      <label class="lang-switch">
+        <span class="sr-only">Sprache</span>
+        <select id="lang-select">
+          <option value="de" selected>DE</option>
+          <option value="en">EN</option>
+        </select>
+      </label>
+    </nav>
+    <!-- ...existing content... -->
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1 data-i18n="docs.title">Dokumentation</h1>
+      <p data-i18n="docs.subtitle">Schneller Einstieg und Referenz.</p>
+    </section>
+
+    <section class="panel">
+      <h2 data-i18n="docs.getting.title">Erste Schritte</h2>
+      <ol class="steps">
+        <li data-i18n="docs.getting.step1">Bot einladen und die erforderlichen Berechtigungen wählen.</li>
+        <li data-i18n="docs.getting.step2">/setup im Server ausführen, um Grundfunktionen zu aktivieren.</li>
+        <li data-i18n="docs.getting.step3">Module nach Bedarf in den Einstellungen aktivieren/deaktivieren.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2 data-i18n="docs.commands.title">Befehle (Auszug)</h2>
+      <ul class="checklist">
+        <li><code>/moderation warn @user</code> — <span data-i18n="docs.commands.warn">Verwarnt einen Nutzer</span></li>
+        <li><code>/music play [url]</code> — <span data-i18n="docs.commands.play">Spielt einen Track</span></li>
+        <li><code>/poll create</code> — <span data-i18n="docs.commands.poll">Erstellt eine Umfrage</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> WisdomBot</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+
