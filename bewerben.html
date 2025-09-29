@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerben | WisdomBot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+    <!-- Navigation Header -->
+    <header class="bg-gray-900 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <a href="index.html" class="flex items-center space-x-2 text-white text-2xl font-extrabold tracking-tight">
+                <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="w-10 h-10 object-contain">
+                <span>WisdomBot</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="index.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Home</a>
+                <a href="docs.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Docs</a>
+                <a href="team.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Team</a>
+                <a href="impressum.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Impressum</a>
+            </nav>
+            
+            <!-- Invite Button (Desktop) -->
+            <div class="hidden md:block">
+                <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-2">
+            <a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="docs.html" class="block px-4 py-2 text-white hover:bg-gray-700">Docs</a>
+            <a href="team.html" class="block px-4 py-2 text-white hover:bg-gray-700">Team</a>
+            <a href="impressum.html" class="block px-4 py-2 text-white hover:bg-gray-700">Impressum</a>
+            <a href="terms.html" class="block px-4 py-2 text-white hover:bg-gray-700">Terms</a>
+            <a href="privacy.html" class="block px-4 py-2 text-white hover:bg-gray-700">Privacy</a>
+            <div class="px-4 pt-2">
+                <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 max-w-4xl">
+        <div class="text-center mb-12">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white">Werde Teil des Teams</h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8">Hilf mit, WisdomBot noch besser zu machen!</p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 ring-1 ring-blue-500/20 mb-8">
+        
+        <div class="bg-gradient-to-br from-blue-900/30 to-gray-800 p-8 rounded-2xl shadow-2xl border border-blue-500/30">
+            <h2 class="text-3xl font-bold mb-6 text-white text-center">Bewerbungsformular</h2>
+            <form id="application-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name *</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">E-Mail *</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="position" class="block text-sm font-medium text-gray-300 mb-2">Position *</label>
+                    <select id="position" name="position" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white">
+                        <option value="">Bitte wählen...</option>
+                        <option value="javascript-developer">JavaScript Developer</option>
+                        <option value="ui-ux-designer">UI/UX Designer</option>
+                        <option value="community-manager">Community Manager</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="discord" class="block text-sm font-medium text-gray-300 mb-2">Discord Tag (optional)</label>
+                    <input type="text" id="discord" name="discord" placeholder="Benutzername#1234" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400">
+                </div>
+
+                <div>
+                    <label for="experience" class="block text-sm font-medium text-gray-300 mb-2">Erfahrung & Qualifikationen *</label>
+                    <textarea id="experience" name="experience" rows="4" required placeholder="Beschreibe deine Erfahrungen und warum du perfekt für diese Position bist..." class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"></textarea>
+                </div>
+
+                <div>
+                    <label for="availability" class="block text-sm font-medium text-gray-300 mb-2">Verfügbarkeit (Stunden pro Woche) *</label>
+                    <input type="number" id="availability" name="availability" min="1" max="40" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400">
+                </div>
+
+                <div>
+                    <label for="portfolio" class="block text-sm font-medium text-gray-300 mb-2">Portfolio/Projekte (optional)</label>
+                    <textarea id="portfolio" name="portfolio" rows="3" placeholder="Links zu deinen Projekten, GitHub, Portfolio, etc." class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"></textarea>
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" id="terms" name="terms" required class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500">
+                    <label for="terms" class="ml-2 text-sm text-gray-300">Ich stimme den Datenschutzbestimmungen zu und bestätige, dass alle Angaben wahrheitsgemäß sind.</label>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 shadow-blue-500/50 ring-2 ring-blue-500 ring-offset-4 ring-offset-[#0f172a]">
+                        Bewerbung absenden
+                    </button>
+                </div>
+            </form>
+            
+            <div id="form-message" class="mt-4 text-center hidden">
+                <p class="text-green-400 font-semibold">Vielen Dank für deine Bewerbung! Wir werden uns innerhalb von 3-5 Tagen bei dir melden.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-12 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <div class="flex flex-wrap justify-center space-x-4 mb-4 text-sm md:text-base">
+                <a href="impressum.html" class="hover:text-white transition duration-300">Impressum</a>
+                <a href="terms.html" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="privacy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="docs.html" class="hover:text-white transition duration-300">Documentation</a>
+            </div>
+            <p class="text-xs md:text-sm">&copy; 2024 WisdomBot. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('application-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            document.getElementById('form-message').classList.remove('hidden');
+            
+            // Hide form
+            this.style.display = 'none';
+            
+            // Scroll to message
+            document.getElementById('form-message').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+  </html>
