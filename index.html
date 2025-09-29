@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite | WisdomBot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+    <!-- Navigation Header -->
+    <header class="bg-gray-900 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <a href="index.html" class="flex items-center space-x-2 text-white text-2xl font-extrabold tracking-tight">
+                <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="w-10 h-10 object-contain">
+                <span>WisdomBot</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="index.html" class="text-blue-400 border-b-2 border-blue-400 hover:text-blue-400 transition duration-300">Home</a>
+                <a href="docs.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Docs</a>
+                <a href="team.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Team</a>
+                <a href="impressum.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Impressum</a>
+            </nav>
+            
+            <!-- Invite Button (Desktop) -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-2">
+            <a href="index.html" class="block px-4 py-2 text-white bg-gray-700">Home</a>
+            <a href="docs.html" class="block px-4 py-2 text-white hover:bg-gray-700">Docs</a>
+            <a href="team.html" class="block px-4 py-2 text-white hover:bg-gray-700">Team</a>
+            <a href="impressum.html" class="block px-4 py-2 text-white hover:bg-gray-700">Impressum</a>
+            <a href="terms.html" class="block px-4 py-2 text-white hover:bg-gray-700">Terms</a>
+            <a href="privacy.html" class="block px-4 py-2 text-white hover:bg-gray-700">Privacy</a>
+            <div class="px-4 pt-2">
+                <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 text-center">
+        <!-- Hero Section -->
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-white leading-tight">
+                WisdomBot: Dein All-in-One Discord Bot
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8">
+                Moderation, Spaß und Nützlichkeit – alles in einem intelligenten Bot, angetrieben von der Weisheit der Eule.
+            </p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-3 px-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300
+            shadow-blue-500/50 ring-2 ring-blue-500 ring-offset-4 ring-offset-[#0f172a]">
+                Jetzt auf deinen Server einladen
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Tritt Tausenden von Servern bei, die bereits WisdomBot nutzen!</p>
+        </div>
+
+        <!-- Features Section -->
+        <section class="mt-20">
+            <h2 class="text-4xl font-bold mb-10 text-blue-400">Warum WisdomBot?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 border border-gray-700 hover:bg-gray-700/50 hover:ring-2 ring-blue-500/50 transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002 12c0 2.83 1.05 5.433 2.922 7.433.935.986 2.053 1.802 3.298 2.378A13.007 13.007 0 0012 22a13.007 13.007 0 005.78-1.19c1.245-.576 2.363-1.392 3.298-2.378C20.95 17.433 22 14.83 22 12a12.01 12.01 0 00-2.382-7.016z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Moderation</h3>
+                    <p class="text-gray-400">Halte deinen Server sauber und sicher mit anpassbaren Regeln, Auto-Mod und detaillierten Protokollen.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 border border-gray-700 hover:bg-gray-700/50 hover:ring-2 ring-blue-500/50 transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Vielfältige Unterhaltung</h3>
+                    <p class="text-gray-400">Minispiele, benutzerdefinierte Befehle und interaktive Funktionen, um deine Community zu engagieren.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 border border-gray-700 hover:bg-gray-700/50 hover:ring-2 ring-blue-500/50 transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Hohe Verfügbarkeit</h3>
+                    <p class="text-gray-400">Wir gewährleisten eine nahezu 100%ige Uptime, damit WisdomBot immer einsatzbereit ist, wenn du ihn brauchst.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-12 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <div class="flex flex-wrap justify-center space-x-4 mb-4 text-sm md:text-base">
+                <a href="impressum.html" class="hover:text-white transition duration-300">Impressum</a>
+                <a href="terms.html" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="privacy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="docs.html" class="hover:text-white transition duration-300">Documentation</a>
+            </div>
+            <p class="text-xs md:text-sm">&copy; 2024 WisdomBot. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

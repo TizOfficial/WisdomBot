@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz | WisdomBot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+    <!-- Navigation Header -->
+    <header class="bg-gray-900 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <a href="index.html" class="flex items-center space-x-2 text-white text-2xl font-extrabold tracking-tight">
+                <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="w-10 h-10 object-contain">
+                <span>WisdomBot</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="index.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Home</a>
+                <a href="docs.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Docs</a>
+                <a href="team.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Team</a>
+                <a href="impressum.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Impressum</a>
+            </nav>
+            
+            <!-- Invite Button (Desktop) -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-2">
+            <a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="docs.html" class="block px-4 py-2 text-white hover:bg-gray-700">Docs</a>
+            <a href="team.html" class="block px-4 py-2 text-white hover:bg-gray-700">Team</a>
+            <a href="impressum.html" class="block px-4 py-2 text-white hover:bg-gray-700">Impressum</a>
+            <a href="terms.html" class="block px-4 py-2 text-white hover:bg-gray-700">Terms</a>
+            <a href="privacy.html" class="block px-4 py-2 text-white bg-gray-700">Privacy</a>
+            <div class="px-4 pt-2">
+                <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-3xl">
+        <h1 class="text-4xl font-bold mb-8 text-center text-white">Datenschutzerklärung (Privacy Policy)</h1>
+        <p class="text-sm text-gray-500 mb-6 text-center">Zuletzt aktualisiert: 1. August 2024</p>
+
+        <section class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 space-y-6 ring-1 ring-blue-500/20">
+            <h2 class="text-2xl font-semibold text-blue-400">1. Gesammelte Daten (Discord)</h2>
+            <p>Um seine Funktionen auszuführen, speichert WisdomBot temporär oder dauerhaft folgende Daten:</p>
+            <ul class="list-disc list-inside ml-4 space-y-2 text-gray-300">
+                <li><strong>Server-ID und Kanal-IDs:</strong> Notwendig für Konfigurationseinstellungen (z.B. Moderationsprotokolle, Willkommensnachrichten).</li>
+                <li><strong>Benutzer-IDs:</strong> Gespeichert im Zusammenhang mit Moderationsfällen (Banns, Mutes) oder zur Verwaltung von benutzerdefinierten Befehlen und Profilen.</li>
+                <li><strong>Nachrichteninhalte:</strong> Werden nur temporär verarbeitet (z.B. zur Erkennung von Spam oder Auto-Mod-Funktionen). Nachrichtenprotokolle werden nicht dauerhaft gespeichert, es sei denn, dies ist für eine spezifische Funktion (wie Server-Logs) durch den Serveradministrator aktiviert.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-blue-400">2. Datenlöschung</h2>
+            <p>Alle gespeicherten Server-Daten (Konfigurationen, Protokolle) werden automatisch gelöscht, sobald WisdomBot von einem Server entfernt wird. Auf Anfrage können spezifische Benutzerdaten gelöscht werden.</p>
+
+            <h2 class="text-2xl font-semibold text-blue-400">3. Website-Nutzung</h2>
+            <p>Diese Website verwendet keine Cookies oder Tracking-Technologien von Drittanbietern. Es werden keine personenbezogenen Daten über die Nutzung der Website gesammelt.</p>
+            
+            <h2 class="text-2xl font-semibold text-blue-400">4. Kontakt</h2>
+            <p>Für Fragen zum Datenschutz oder zur Anforderung der Datenlöschung wenden Sie sich bitte an:</p>
+            <p class="text-blue-400">support@wisdombot.xyz</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-12 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <div class="flex flex-wrap justify-center space-x-4 mb-4 text-sm md:text-base">
+                <a href="impressum.html" class="hover:text-white transition duration-300">Impressum</a>
+                <a href="terms.html" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="privacy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="docs.html" class="hover:text-white transition duration-300">Documentation</a>
+            </div>
+            <p class="text-xs md:text-sm">&copy; 2024 WisdomBot. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

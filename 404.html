@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden | WisdomBot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+    <!-- Navigation Header -->
+    <header class="bg-gray-900 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <a href="index.html" class="flex items-center space-x-2 text-white text-2xl font-extrabold tracking-tight">
+                <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="w-10 h-10 object-contain">
+                <span>WisdomBot</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="index.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Home</a>
+                <a href="docs.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Docs</a>
+                <a href="team.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Team</a>
+                <a href="impressum.html" class="text-gray-300 hover:text-blue-400 transition duration-300">Impressum</a>
+            </nav>
+            
+            <!-- Invite Button (Desktop) -->
+            <div class="hidden md:block">
+                <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-2">
+            <a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="docs.html" class="block px-4 py-2 text-white hover:bg-gray-700">Docs</a>
+            <a href="team.html" class="block px-4 py-2 text-white hover:bg-gray-700">Team</a>
+            <a href="impressum.html" class="block px-4 py-2 text-white hover:bg-gray-700">Impressum</a>
+            <a href="terms.html" class="block px-4 py-2 text-white hover:bg-gray-700">Terms</a>
+            <a href="privacy.html" class="block px-4 py-2 text-white hover:bg-gray-700">Privacy</a>
+            <div class="px-4 pt-2">
+                <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-300">
+                    Bot einladen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-32 text-center">
+        <div class="max-w-2xl mx-auto">
+            <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="w-32 h-32 mx-auto mb-8 object-contain animate-bounce">
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-4 text-blue-400">404</h1>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">Seite nicht gefunden</h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-10">
+                Die Weisheit der Eule reicht leider nicht aus, um diese Seite zu finden.
+                Vielleicht wurde sie verschoben oder existiert nicht mehr.
+            </p>
+            <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+                <a href="index.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 shadow-blue-500/50 ring-2 ring-blue-500 ring-offset-4 ring-offset-[#0f172a]">
+                    Zurück zur Startseite
+                </a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1419030914616397884" class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 shadow-gray-500/30 ring-2 ring-gray-500 ring-offset-4 ring-offset-[#0f172a]">
+                    Bot einladen
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-12 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <div class="flex flex-wrap justify-center space-x-4 mb-4 text-sm md:text-base">
+                <a href="impressum.html" class="hover:text-white transition duration-300">Impressum</a>
+                <a href="terms.html" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="privacy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="docs.html" class="hover:text-white transition duration-300">Documentation</a>
+            </div>
+            <p class="text-xs md:text-sm">&copy; 2024 WisdomBot. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

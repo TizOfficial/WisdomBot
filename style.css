@@ -1,0 +1,15 @@
+/* style.css */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a; /* Deep Navy/Slate 950 - Darker background for more contrast */
+    color: #e2e8f0; /* Light text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+}
+h1, h2, h3 {
+    color: #93c5fd; /* Blue 300 - highlight color for default headers */
+}
