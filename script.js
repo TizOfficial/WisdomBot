@@ -9,9 +9,9 @@ const resources = {
       hero: { title: "Der All-in-One Discord Bot für Moderation, Musik und mehr.", subtitle: "Smarte Tools, saubere Performance und einfache Bedienung – alles in einem Bot." },
       cta: { invite: "Bot einladen", docs: "Zur Dokumentation" },
       features: {
-        mod: { title: "Moderation", desc: "Automod, Mutes, Warnungen und Logs – robust und zuverlässig." },
-        music: { title: "Musik", desc: "Warteschlange, Playlists und hochwertige Audio-Wiedergabe." },
-        utility: { title: "Utilities", desc: "Rollen, Umfragen, Erinnerungen und praktische Shortcuts." }
+        mod: { title: "Moderation", desc: "Automod, Mutes, Warnungen und Logs." },
+        music: { title: "Economy", desc: "Pay, Daily, Arbeiten, Shop" },
+        utility: { title: "Utilities", desc: "Rollen, Umfragen, Erinnerungen." }
       },
       panel: { title: "Warum WisdomBot?", point1: "Schnell, stabil und wartungsfreundlich", point2: "Einfaches Setup mit klaren Befehlen", point3: "Transparente Updates und aktive Community" },
       team: { title: "Team", subtitle: "Die Köpfe hinter WisdomBot.", roles: { founder: "Gründer • Lead Developer", community: "Community Manager • Support", ops: "DevOps • Infrastruktur" } },
