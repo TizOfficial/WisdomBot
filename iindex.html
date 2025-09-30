@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bald verfügbar | WisdomBot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body class="selection:bg-blue-600 selection:text-white min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <!-- Animated background particles -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+    
+    <main class="container mx-auto px-4 py-8 text-center z-10 flex-grow flex items-center justify-center">
+        <div class="max-w-2xl mx-auto">
+            <!-- Logo with pulse animation -->
+            <img src="/41281-owlbot.png" alt="WisdomBot Logo" class="w-32 h-32 mx-auto mb-8 object-contain animate-pulse drop-shadow-2xl">
+            
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-4 text-white leading-tight animate-fade-in">
+                Bald verfügbar
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
+                Die Weisheit der Eule braucht noch etwas Zeit, um sich vorzubereiten.
+            </p>
+            
+            <!-- Discord Server Button -->
+            <div class="mt-8">
+                <a href="https://discord.gg/JK8nCSmbch" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-3 px-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 shadow-blue-500/50 ring-2 ring-blue-500 ring-offset-4 ring-offset-[#0f172a]">
+                    Discord Server beitreten
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-gray-900/80 backdrop-blur-sm py-6 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p class="text-sm">&copy; 2024 WisdomBot. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Add particle.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize particles
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 50, density: { enable: true, value_area: 800 } },
+                color: { value: '#93c5fd' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.3, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#3b82f6',
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            }
+        });
+    </script>
+    
+    <style>
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 1s ease-out;
+        }
+        
+        .animate-fade-in-delay {
+            animation: fade-in 1s ease-out 0.3s both;
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</body>
+</html>
